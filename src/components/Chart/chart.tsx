@@ -23,7 +23,11 @@ const state = {
 
 const ChartComponent = () => {
   return (
-    <div className="card border-0 shadow p-3 rounded-4 ">
+    <div className="card border-0 shadow p-3 rounded-4">
+      <div className="d-flex justify-content-between mt-2 align-items-end">
+        <h4 className="mb-0">Top categories</h4>
+        <p className="mb-0">View all</p>
+      </div>
       <Chart
         options={state.options}
         series={state.series}
