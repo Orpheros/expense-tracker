@@ -35,3 +35,7 @@ html {
     display: block; /* or any other appropriate display value */
   }
 }
+
+.list-group .list-group-item {
+  border: 0;
+}
