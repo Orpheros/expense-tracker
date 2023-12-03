@@ -13,10 +13,19 @@ const Layout = (props: any) => {
     >
       {/* <Background /> */}
       <div className="row h-100">
-        <div className="col-lg-2 col-md-2 col-12 p-0 h-100 d-lg-block d-none pt-2 ps-3">
-          <Sidebar />
+        <div className="col-lg-2 col-md-2 col-12 p-0 h-100 d-lg-block d-none pt-0 ps-3 pb-2">
+          {/* <div style={{ height: "80px" }}></div> */}
+          <div className="d-flex h-100 pb-0">
+            <div className="card-glass-nav m-2 mb-xl-4 mb-2 ms-3 rounded-5 mt-2 mt-3 d-flex">
+              <div className="card-body flex-grow-1">
+                <div>
+                  <Sidebar />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="col-lg-10 col-md-12 col-12 h-100 py-2 pt-3 ps-0">
+        <div className="col-lg-10 col-md-12 col-12 h-100 py-2 pt-2 ps-0">
           <div className="">
             <Navbar />
             <div className="card-glass rounded-5 m-4 mt-0 h-100 mb-0">

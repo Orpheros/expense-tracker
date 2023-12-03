@@ -3,13 +3,13 @@ import ChartComponent from "../components/Chart/chart";
 import ChartComponentIncome from "../components/Chart/chart-income";
 import ChartComponentExpense from "../components/Chart/chart-expense";
 
-function App() {
+function DashboardPage() {
   return (
     <Layout>
-      <div className="row h-100">
+      <div className="row">
         <div className="col-lg-8 col-md-12 col-12">
-          <div className="container-fluid h-100 d-flex flex-column">
-            <div className="row h-100">
+          <div className="container-fluid d-flex flex-column">
+            <div className="row">
               <div className="col-lg-4 col-md-12 col-12 p-3 d-flex">
                 <div className="card p-3 border-0 shadow rounded-4 pt-4 pb-4 flex-grow-1">
                   <p className="mb-0">Balance</p>
@@ -107,4 +107,4 @@ function App() {
   );
 }
 
-export default App;
+export default DashboardPage;

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import App from "./pages/App.tsx";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -8,6 +7,8 @@ import {
   createBrowserRouter,
   useNavigate,
 } from "react-router-dom";
+import DashboardPage from "./pages/dashboard.tsx";
+import TransactionsList from "./pages/transactions-list.tsx";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <App />,
+    element: <DashboardPage />,
+  },
+  {
+    path: "/transactions",
+    element: <TransactionsList />,
   },
 ]);
 
