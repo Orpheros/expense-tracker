@@ -1,10 +1,7 @@
 const Navbar = () => {
   return (
-    <nav
-      style={{ height: "80px" }}
-      className="d-flex align-items-center justify-content-center"
-    >
-      <div className="card-glass-nav m-4 rounded-4 mt-0 mb-0 w-100">
+    <nav className="d-flex align-items-center justify-content-center d-lg-none d-block">
+      <div className="card-glass-nav rounded-4 mb-1 w-100">
         <div className="card-body p-3">
           <div
             className="d-flex justify-content-between"

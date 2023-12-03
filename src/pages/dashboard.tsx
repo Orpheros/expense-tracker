@@ -6,8 +6,8 @@ import ChartComponentExpense from "../components/Chart/chart-expense";
 function DashboardPage() {
   return (
     <Layout>
-      <div className="row">
-        <div className="col-lg-8 col-md-12 col-12">
+      <div className="row flex-grow-1 w-100">
+        <div className="col-lg-8 col-md-12 col-12 d-flex">
           <div className="container-fluid d-flex flex-column">
             <div className="row">
               <div className="col-lg-4 col-md-12 col-12 p-3 d-flex">
@@ -52,7 +52,6 @@ function DashboardPage() {
                   <h4 className="mb-0">Recent transaction</h4>
                   <div>
                     <p className="mb-0 d-none d-xxl-block">View all</p>
-                    <p className="mb-0 d-block d-xxl-none">More</p>
                   </div>
                 </div>
                 <div style={{ overflowY: "scroll", height: "400px" }}>
@@ -79,7 +78,6 @@ function DashboardPage() {
                   <h4 className="mb-0">Top categories</h4>
                   <div>
                     <p className="mb-0 d-none d-xxl-block">View all</p>
-                    <p className="mb-0 d-block d-xxl-none">More</p>
                   </div>
                 </div>
                 <div className="overflow-auto" style={{ height: "305px" }}>
