@@ -51,7 +51,7 @@ function DashboardPage() {
                 <div className="d-flex justify-content-between mb-2 mt-2 bottom-0 align-items-end">
                   <h4 className="mb-0">Recent transaction</h4>
                   <div>
-                    <p className="mb-0 d-none d-xxl-block">View all</p>
+                    <p className="mb-0">View all</p>
                   </div>
                 </div>
                 <div style={{ overflowY: "scroll", height: "400px" }}>
@@ -77,10 +77,10 @@ function DashboardPage() {
                 <div className="d-flex justify-content-between mb-2 mt-2 align-items-end">
                   <h4 className="mb-0">Top categories</h4>
                   <div>
-                    <p className="mb-0 d-none d-xxl-block">View all</p>
+                    <p className="mb-0">View all</p>
                   </div>
                 </div>
-                <div className="overflow-auto" style={{ height: "305px" }}>
+                <div className="overflow-auto" style={{ height: "320px" }}>
                   {(() => {
                     let elements = [];
                     for (let i = 0; i < 12; i++) {

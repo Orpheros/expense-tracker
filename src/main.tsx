@@ -8,7 +8,9 @@ import {
   useNavigate,
 } from "react-router-dom";
 import DashboardPage from "./pages/dashboard.tsx";
-import TransactionsList from "./pages/transactions-list.tsx";
+import TransactionsListPage from "./pages/transactions-list.tsx";
+import AddIncomePage from "./pages/add-income.tsx";
+import AddExpensePage from "./pages/add-expense.tsx";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +23,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/transactions",
-    element: <TransactionsList />,
+    element: <TransactionsListPage />,
+  },
+  {
+    path: "/add-income",
+    element: <AddIncomePage />,
+  },
+  {
+    path: "/add-expense",
+    element: <AddExpensePage />,
   },
 ]);
 

@@ -1,4 +1,4 @@
-import Background from "../background/background";
+// import Background from "../background/background";
 import Navbar from "./navbar";
 import Sidebar from "./sidebar";
 
@@ -6,7 +6,7 @@ const Layout = (props: any) => {
   const { children } = props;
   return (
     <div
-      className="container-fluid vh-100"
+      className="container-fluid h-100"
       style={{
         background: "#F5F7F8",
       }}
@@ -17,11 +17,9 @@ const Layout = (props: any) => {
           <div className="col-lg-2 col-md-2 col-12 pe-md-3 pe-0 d-none d-lg-block">
             {/* <div style={{ height: "80px" }}></div> */}
             <div className="d-flex h-100 pb-0">
-              <div className="card-glass-nav rounded-5">
-                <div className="card-body flex-grow-1">
-                  <div>
-                    <Sidebar />
-                  </div>
+              <div className="card-glass-nav rounded-5 d-flex">
+                <div className="card-body flex-grow-1 d-flex flex-column">
+                  <Sidebar />
                 </div>
               </div>
             </div>

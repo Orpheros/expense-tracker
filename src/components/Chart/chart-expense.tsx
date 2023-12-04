@@ -18,12 +18,15 @@ const state = {
 const ChartComponentExpense = () => {
   return (
     <div className="card border-0 shadow rounded-4 h-100">
-      <Chart
-        options={state.options}
-        series={state.series}
-        type="pie"
-        height="270px"
-      />
+      <div className="p-3 h-100">
+        <h4 className="mb-0">Expenses</h4>
+        <Chart
+          options={state.options}
+          series={state.series}
+          type="pie"
+          height="270"
+        />
+      </div>
     </div>
   );
 };
